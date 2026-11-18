@@ -1,0 +1,21 @@
+{
+    // Requires an ST-Link debug probe (SWD on PA13/PA14).
+    // Your board is currently DFU-only - this is ready for when you add a probe.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (ST-Link)",
+            "cwd": "${workspaceFolder}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32h7x.cfg"
+            ],
+            "showDevDebugOutput": "raw"
+        }
+    ]
+}

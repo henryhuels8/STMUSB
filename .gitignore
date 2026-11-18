@@ -1,0 +1,18 @@
+# CMake build output
+/build/
+
+# VS Code local state
+.vscode/.cache/
+
+# Downloaded tool binaries and dependencies
+/tools/
+/lib/
+
+# Compiled artifacts
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.a
+*.d
