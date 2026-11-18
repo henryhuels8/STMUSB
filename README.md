@@ -129,6 +129,10 @@ For a quick test, `sudo dfu-util -l` can confirm whether the board is visible. R
 
 If dfu-util reports `LIBUSB_ERROR_NOT_SUPPORTED`, use Zadig once to bind the STM32 DFU interface to the WinUSB driver.
 
+## Prototype implementation
+
+The first USB-microphone implementation plan is in [USB Microphone to ADC/DAC Prototype](docs/USB_MICROPHONE_ADC_PROTOTYPE.md). It defines the bring-up sequence, TinyUSB integration, audio ring buffer, DAC/ADC loopback, diagnostics, and acceptance tests for the next firmware engineer.
+
 ## Debugging
 
 An ST-Link probe can be used with SWD (PA13/SWDIO and PA14/SWCLK). Debug configuration is in `.vscode/launch.json`.
